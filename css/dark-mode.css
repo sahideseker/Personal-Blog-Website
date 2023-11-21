@@ -1,0 +1,278 @@
+* {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 200;
+    font-size: small;
+    margin: 0;
+    padding: 0;
+  }
+   
+  .dark-mode {
+    background-color: #1f1f1f;
+    color: #ffffff;
+  }
+  
+  /* banner görsel bölümü */
+  .dark-mode  .navbar-img{
+      background-image: url(/image/dark-banner.jpg);
+      justify-content: space-around;
+      background-size: cover;
+      background-repeat: no-repeat;
+      min-height: 30vh;
+  }
+  
+  /* Hakkımda bölümü css */
+  
+  
+  .dark-mode   .container-1 {
+    display: flex; /* flexbox kullanarak elementleri yatayda yerleştirme */
+    padding: 75px 70px 25px 70px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .dark-mode   .about-block {
+    width: 60%; /* orta div'in genişliği %60 olarak ayarlanıyor */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* itemleri yatay olarak aralıklı hale getirir */
+    align-items: center;
+    display: flex;
+  }
+  
+  .dark-mode  .about-content {
+    flex-basis: 50%; /* sol div'in genişliği %50 olacak */
+    padding: 20px;
+    float: left;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .dark-mode  .profile-img {
+    flex-basis: 30%; /* sağ div'in genişliği %25 olacak */
+    padding: 20px;
+    flex-direction: column;
+    float: right;
+  }
+  
+  .dark-mode  img {
+    max-width: 100%;
+    height: auto;
+    
+  }
+  
+  .dark-mode   p{
+    line-height: 1.5;
+  }
+  
+  /* Sosyal mmedya ikonları bölümü */
+  .dark-mode  .container-2{
+    padding: 10px 20px;
+    display: flex; /* flexbox kullanarak elementleri yatayda yerleştirme */
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  
+  }
+  
+  
+  .dark-mode   .iletisim{
+    padding: 20px 60px  ;
+    display: flex;
+    flex-wrap: wrap; /* itemlerin sıralanma düzeni */
+    justify-content: center; /* itemlerin yatayda merkezlenmesi */
+    align-items: center; /* itemlerin dikeyde ortalanması */
+  }
+  
+  
+  .dark-mode  .cerceveli-div {
+    border: 0.75px solid rgba(250, 250, 250, 0.712);
+    border-radius: 5px;
+    height: 60px;
+    width: 190px;
+    margin: 10px 30px;
+    box-sizing: border-box;
+    text-align: center;
+    flex-basis: 0; /* itemlerin ilk genişliği */
+    flex-grow: 1; /* itemlerin genişliği büyütülürken oranı */
+  }
+  
+  /* çerçeveli divlerin içerisi */
+  .dark-mode   .sosyalmedya  {
+    align-items: center;
+    justify-content: center;
+    line-height: 2; 
+    display: flex;
+    margin: 10px;
+  }
+  
+  .dark-mode  .sosyalmedya-img{
+    float: left;
+    margin: 5px;
+  }
+  
+  .dark-mode   .sosyalmedya a{
+    text-decoration: none;
+    color:  #ffffff;
+    float: right;
+    margin: 5px;
+  
+  }
+  
+  /* Blog bölümü (3'e ayrıldı) */
+  /* en dış container bölümü */
+  .dark-mode   .container-3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* itemleri yatay olarak aralıklı hale getirir */
+    align-items: center;
+    padding: 50px 100px 700px 100px; /*ÖNEMLİ! bu paddingi değiştirmen gerekebilir */  
+  }
+  
+  /* sağ ve sol bölüm  */
+  .dark-mode   .topic-left {
+    width: 20%; /* sol ve sağ div'lerin genişliği %25 olarak ayarlanıyor */
+    height: 300px;
+    display: inline;
+  }
+  
+  .dark-mode   .topic-right {
+    width: 20%; /* sol ve sağ div'lerin genişliği %25 olarak ayarlanıyor */
+    height: 300px;
+    display: inline;
+  }
+  
+  /* orta blog bölümü */
+  .dark-mode   .blog {
+    width: 50%; /* orta div'in genişliği %50 olarak ayarlanıyor */
+    height: 300px;
+  
+  }
+  
+  /* sol bölüm - linkler */
+  /* .programming-language{
+    padding: 0px 10px 350px 50px; 
+  }
+   */
+  
+  
+  
+   .dark-mode   .programming-language ul{
+    padding-left: 30px;   
+  }
+  
+  .dark-mode   .programming-language ul li a{
+    text-decoration: none;      
+    color: #ffffff;
+    line-height: 2;
+  }
+  
+  /* sağ bölüm - linkler */
+  /* .resources{
+    padding: 0px 10px 350px 10px; 
+  } */
+  
+  .dark-mode   .resources ul{
+    padding-left: 30px;
+  }
+  
+  .dark-mode  .resources ul li a{
+      text-decoration: none;      
+      color: #ffffff;
+      line-height: 2;
+  }
+  
+  /* orta bölüm - callout bölümü */
+  .dark-mode   .middle2{
+    align-items:center;
+    justify-content: center;
+    display: block;
+  }
+  
+  .dark-mode  .callout {
+    background-color:   #0b430b;
+    border-radius: none;
+    padding: 20px;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* orta bölüm - blog bölümü */
+  .dark-mode  .blog-link{
+    align-items: center;
+    justify-content: left;
+    display: flex;
+    line-height: 2.2;
+    padding: 20px;
+    padding-left: 60px;
+  }
+  
+  .dark-mode  .blog-link a{
+    color: #ffffff;
+    text-decoration-color: #DCDCDC;
+    text-decoration-line:underline;
+  }
+  
+  
+  /* linklerin özellikleri */
+  
+  .dark-mode  a{
+    color: #ffffff;
+    text-decoration-color: #000000;
+    text-decoration-line:none;
+  }
+  
+  .dark-mode   a:hover{
+    background-color: darkgrey;
+   }
+   
+  .dark-mode a:active{
+     color:darkgrey;
+  }
+ 
+  
+  /* buton */
+  .dark-mode .btn {
+    background-color: transparent;
+    color: #333;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 20px; /* Butonun yazı boyutunu artırır */
+    padding: 15px 30px; /* Butonun içerisindeki boşluğu artırır */
+  }
+  
+  #darkModeIcon {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+  }
+  
+  /* ileri geri butonu */
+
+  .dark-mode .next {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+  }
+  
+ .dark-mode .back-button {
+    padding: 10px 35px;
+    background-color: #0b430b;
+    color: #fff;
+    border-radius: 10px;
+  }
+  
+  .dark-mode .next-button {
+    padding: 10px 35px;
+    background-color: #0b430b;
+    color: #fff;
+    border-radius: 10px;
+  }
+  
+  
+  
+  
+
+
+

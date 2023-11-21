@@ -1,0 +1,288 @@
+* {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 200;
+  font-size: small;
+  margin: 0;
+  padding: 0;
+}
+
+/* banner görsel bölümü */
+.navbar-img{
+    background-image: url(/image/banner.jpg);
+    justify-content: space-around;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 30vh;
+}
+
+/* Hakkımda bölümü css */
+
+
+.container-1 {
+  display: flex; /* flexbox kullanarak elementleri yatayda yerleştirme */
+  padding: 75px 70px 25px 70px;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-block {
+  width: 60%; /* orta div'in genişliği %60 olarak ayarlanıyor */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* itemleri yatay olarak aralıklı hale getirir */
+  align-items: center;
+  display: flex;
+}
+
+.about-content {
+  flex-basis: 50%; /* sol div'in genişliği %50 olacak */
+  padding: 20px;
+  float: left;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-img {
+  flex-basis: 30%; /* sağ div'in genişliği %25 olacak */
+  padding: 20px;
+  flex-direction: column;
+  float: right;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  
+}
+
+p{
+  line-height: 1.5;
+}
+
+/* Sosyal mmedya ikonları bölümü */
+.container-2{
+  padding: 10px 20px;
+  display: flex; /* flexbox kullanarak elementleri yatayda yerleştirme */
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+.iletisim{
+  padding: 20px 60px  ;
+  display: flex;
+  flex-wrap: wrap; /* itemlerin sıralanma düzeni */
+  justify-content: center; /* itemlerin yatayda merkezlenmesi */
+  align-items: center; /* itemlerin dikeyde ortalanması */
+}
+
+
+.cerceveli-div {
+  border: 0.75px solid rgba(55,53,47,0.4);
+  border-radius: 5px;
+  height: 60px;
+  width: 190px;
+  margin: 10px 30px;
+  box-sizing: border-box;
+  text-align: center;
+  flex-basis: 0; /* itemlerin ilk genişliği */
+  flex-grow: 1; /* itemlerin genişliği büyütülürken oranı */
+}
+
+/* çerçeveli divlerin içerisi */
+.sosyalmedya  {
+  align-items: center;
+  justify-content: center;
+  line-height: 2; 
+  display: flex;
+  margin: 10px;
+}
+
+.sosyalmedya-img{
+  float: left;
+  margin: 5px;
+}
+
+.sosyalmedya a{
+  text-decoration: none;
+  color:  #787878;
+  float: right;
+  margin: 5px;
+
+}
+
+/* Blog bölümü (3'e ayrıldı) */
+/* en dış container bölümü */
+.container-3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* itemleri yatay olarak aralıklı hale getirir */
+  align-items: center;
+  padding: 50px 100px 700px 100px; /*ÖNEMLİ! bu paddingi değiştirmen gerekebilir */  
+}
+
+/* sağ ve sol bölüm  */
+.topic-left {
+  width: 20%; /* sol ve sağ div'lerin genişliği %25 olarak ayarlanıyor */
+  height: 300px;
+  display: inline;
+}
+
+.topic-right {
+  width: 20%; /* sol ve sağ div'lerin genişliği %25 olarak ayarlanıyor */
+  height: 300px;
+  display: inline;
+}
+
+/* orta blog bölümü */
+.blog {
+  width: 50%; /* orta div'in genişliği %50 olarak ayarlanıyor */
+  height: 300px;
+
+}
+
+/* sol bölüm - linkler */
+/* .programming-language{
+  padding: 0px 10px 350px 50px; 
+}
+ */
+
+
+
+.programming-language ul{
+  padding-left: 30px;   
+}
+
+.programming-language ul li a{
+  text-decoration: none;      
+  color: #000;
+  line-height: 2;
+}
+
+/* sağ bölüm - linkler */
+/* .resources{
+  padding: 0px 10px 350px 10px; 
+} */
+
+.resources ul{
+  padding-left: 30px;
+}
+
+.resources ul li a{
+    text-decoration: none;      
+    color: #000;
+    line-height: 2;
+}
+
+/* orta bölüm - callout bölümü */
+.middle2{
+  align-items:center;
+  justify-content: center;
+  display: block;
+}
+
+.callout {
+  background-color:   #eef5ee;
+  border-radius: none;
+  padding: 20px;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+}
+
+/* orta bölüm - blog bölümü */
+.blog-link{
+  align-items: center;
+  justify-content: left;
+  display: flex;
+  line-height: 2.2;
+  padding: 20px;
+  padding-left: 60px;
+}
+
+.blog-link a{
+  color: #000;
+  text-decoration-color: #DCDCDC;
+  text-decoration-line:underline;
+}
+
+
+/* linklerin özellikleri */
+
+a{
+  color: #000;
+  text-decoration-color: #DCDCDC;
+  text-decoration-line:none;
+}
+
+a:hover{
+  background-color: rgb(243, 243, 243);
+ }
+ 
+a:active{
+   color:darkgrey;
+}
+
+/* blog içeriği bölümü */
+.blog-content{
+  font-size: x-small; /* Font boyutunu düzenle */
+  line-height: 1.2; /* Satır yüksekliğini ayarla */
+  border-radius: none;
+  padding: 20px;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+}
+
+/* blog kod bölümleri */
+.code-block{
+  font-size: x-small; /* Font boyutunu düzenle */
+  line-height: 1.2; /* Satır yüksekliğini ayarla */
+  border-radius: none;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* buton */
+.btn {
+  background-color: transparent;
+  color: #333;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 20px; /* Butonun yazı boyutunu artırır */
+  padding: 15px 30px; /* Butonun içerisindeki boşluğu artırır */
+}
+
+#darkModeIcon {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+}
+ /* ileri geri butonu */
+ .next {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.back-button {
+  padding: 10px 35px;
+  background-color: #eef5ee;
+  color: #000;
+  border-radius: 10px;
+}
+
+.next-button {
+  padding: 10px 35px;
+  background-color: #eef5ee;
+  color: #000;
+  border-radius: 10px;
+}
+
+
+
+

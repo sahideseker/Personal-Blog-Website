@@ -1,0 +1,203 @@
+/* banner görsel bölümü */
+.navbar-img{
+  background-image: url(/image/banner.jpg);
+  justify-content: space-around;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 30vh;
+}
+
+
+.container-1 {
+  display: flex;
+  padding: 35px 0px 10px 0px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; /* Düzenleme yönlendirmesi dikey olarak ayarlandı */
+}
+
+.about-block {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Düzenleme yönlendirmesi dikey olarak ayarlandı */
+}
+
+.about-content {
+  flex-basis: 90%;
+  padding: 10px 10px;  
+  font-size: small;
+}
+
+.profile-img {
+  flex-basis: 100%;
+  padding: 20px;
+  order: -1; /* Resmi metnin üzerine yerleştirme */
+  max-width: 60%; /* Resmi %50 oranında küçültme */
+  margin: 0 auto; /* Resmi ortalama */
+  text-align: center; /* Resmi ortalama */
+}
+
+img {
+  max-width: 90%;
+  height: auto;
+  margin: 0 auto;
+}
+
+p{
+  line-height: 1.5;
+  text-align: justify;
+}
+
+/* Sosyal mmedya ikonları bölümü */
+.container-2{
+  padding: 10px 20px;
+  display: flex; /* flexbox kullanarak elementleri yatayda yerleştirme */
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+.iletisim{
+  padding: 10px 30px  ;
+  display: flex;
+  flex-wrap: wrap; /* itemlerin sıralanma düzeni */
+  justify-content: center; /* itemlerin yatayda merkezlenmesi */
+  align-items: center; /* itemlerin dikeyde ortalanması */
+}
+
+
+.cerceveli-div {
+  border: 0.75px solid rgba(55,53,47,0.4);
+  border-radius: 5px;
+  height: 50px;
+  width: 150px;
+  margin: 10px 40px;
+  box-sizing: border-box;
+  text-align: center;
+  flex-basis: 0; /* itemlerin ilk genişliği */
+  flex-grow: 1; /* itemlerin genişliği büyütülürken oranı */
+}
+
+/* çerçeveli divlerin içerisi */
+.sosyalmedya  {
+  align-items: center;
+  justify-content: center;
+  line-height: 2; 
+  display: flex;
+  margin: 4px;
+}
+
+.sosyalmedya-img{
+  float: left;
+  margin: 5px;
+}
+
+.sosyalmedya a{
+  text-decoration: none;
+  color:  #787878;
+  float: right;
+  margin: 5px;
+}
+
+
+/* Blog bölümü (3'e ayrıldı) */
+/* en dış container bölümü */
+.container-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* itemleri yatay olarak aralıklı hale getirir */
+  align-items: center;
+  padding: 50px 5px 700px 5px; /*ÖNEMLİ! bu paddingi değiştirmen gerekebilir */  
+}
+
+/* sağ ve sol bölüm  */
+.topic-left, .topic-right {
+  width: 80%; /* sol ve sağ div'lerin genişliği %25 olarak ayarlanıyor */
+  height: 400px;
+  display: block;
+  padding: 20px;
+
+}
+/* orta blog bölümü */
+.blog {
+  width: 80%; /* orta div'in genişliği %50 olarak ayarlanıyor */
+  height: 820px;
+  padding: 20px;
+  display: block;
+}
+
+/* sol bölüm - linkler */
+.programming-language{
+  padding: 0px 10px 25px 10px;
+}
+
+.programming-language ul{
+  padding-left: 10px;   
+}
+
+.programming-language ul li a{
+  text-decoration: none;      
+  color: #000;
+  line-height: 2;
+}
+
+/* sağ bölüm - linkler */
+.resources{
+  padding: 0px 10px 25px 10px;
+}
+
+.resources ul{
+  padding-left: 10px;
+}
+
+.resources ul li a{
+    text-decoration: none;      
+    color: #000;
+    line-height: 2;
+}
+
+/* orta bölüm - callout bölümü */
+.middle2{
+  align-items:center;
+  justify-content: center;
+}
+
+.callout {
+  background-color:   #eef5ee;
+  border-radius: none;
+  padding: 20px;
+  width: 87%;
+  justify-content: center;
+  align-items: center;
+}
+
+/* orta bölüm - blog bölümü */
+.blog-link{
+  align-items: center;
+  justify-content: left;
+  display: flex;
+  line-height: 2.2;
+  padding: 20px;
+}
+
+.blog-link a{
+  color: #000;
+  text-decoration-color: #DCDCDC;
+  text-decoration-line:underline;
+}
+
+
+/* linklerin özellikleri */
+a:hover{
+  background-color: rgb(243, 243, 243);
+ }
+ 
+ a:active{
+   color:darkgrey;
+ }
+ 

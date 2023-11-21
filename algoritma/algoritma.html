@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- head bölümü -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font-2 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;400&display=swap" rel="stylesheet">
+    
+    <!-- Highlight.js -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/arduino-light.min.css" integrity="sha512-M4nH9C7TRCVWLGruh9fHTfYxGWDiKpOGNjpfC9irhF06aLiYmJczZlW+/6IKOZ+75AGk4Wn4clgd6J13T0zzXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+   <!-- Css bağlantısı -->
+   <link rel="stylesheet" href="/css/style.css" />
+   <link rel="stylesheet" media="(max-width:820px)" href="/css/tablet.css" />
+   <link rel="stylesheet" media="(max-width:500px)" href="/css/mobile.css" />
+   <link rel="stylesheet" href="/css/dark-mode.css">
+   <link rel="stylesheet" media="(max-width:820px)" href="/css/dark-mode-tablet.css" />
+   <link rel="stylesheet" media="(max-width:500px)" href="/css/dark-mode-mobile.css" />
+
+    
+   <title>CodeWithSahide</title>
+
+   <style id="flash-prevention">
+     body {
+       visibility: hidden;
+     }
+   </style>
+   
+ </head>
+ <body>
+
+   <!-- sayfa geçişlerindeki beyaz flaşı kapattık -->
+   <script>
+     const theme = localStorage.getItem('theme') || 'light';
+     document.documentElement.dataset.theme = theme;
+   
+     window.addEventListener('DOMContentLoaded', function() {
+       document.getElementById('flash-prevention').remove();
+       document.body.style.visibility = 'visible';
+     });
+   </script>
+   
+    <!-- banner görsel ekleme -->
+    <div class="navbar-img">    
+      <button onclick="toggleDarkMode()" class="btn">
+        <img id="darkModeIcon" src="/image/sun-icon.png" alt="Sun Icon">
+      </button>
+  </div>
+
+    <!-- Blog bölümü (3'e ayrıldı) -->
+
+    <div class="container-3">
+      <div class="topic-left">
+        <div class="programming-language">
+          <a href="/index.html" style="font-size: medium;">💻 CodeWithSahide 💻</a>
+          <br>
+          <br>
+          <h3>Giriş</h3>
+          <br />
+          <ul>
+            <li>
+              <a href="#">Python Nedir?</a>
+            </li>
+            <li>
+              <a href="#">Python Yorum Satırları</a>
+            </li>
+          </ul>
+        </div>
+<br>
+<div class="programming-language">
+  <h3>Veri Türleri</h3>
+  <br />
+  <ul>
+    <li>
+      <a href="#">Python Nedir?</a>
+    </li>
+    <li>
+      <a href="#">Python Yorum Satırları</a>
+    </li>
+  </ul>
+</div>
+<br>
+<div class="programming-language">
+  <h3>Koşullu İfadeler</h3>
+  <br />
+  <ul>
+    <li>
+      <a href="#">Python Nedir?</a>
+    </li>
+    <li>
+      <a href="#">Python Yorum Satırları</a>
+    </li>
+  </ul>
+</div>
+<br>
+
+
+
+
+
+
+      </div>
+      
+
+      <div class="blog">
+        <div class="callout">
+          <p>
+            📌 Python Programlama Notları
+          </p>
+        </div> 
+
+        <div class="blog-content">
+          <h1 style="font-size: large;">Python Nedir?</h1>
+          <br>
+          <p class="content-paragraf">HTML document structure contains some set of tags. Tags are some text enclosed within <…> angle braces. A tag is like a container for either content or other HTML tags. The below text shows how the HTML document structure looks:
+          </p>
+
+        <pre class="code-block"><code>
+&lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    &lt;head&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;!-- content --&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+            </code></pre>
+          
+   
+        
+
+</div>
+      </div>
+
+      <div class="topic-right">
+        <div class="resources">
+          <h3>Faydalı Kaynaklar</h3>
+          <br />
+          <ul>
+            <li>
+              <a href="https://www.youtube.com/+Sadievrenseker_BK"
+                >Bilgisayar Kavramları Youtube Kanalı</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://learning.edx.org/course/course-v1:HarvardX+CS50+X/home"
+                >CS50's Introduction to Computer Science
+              </a>
+            </li>
+            <li>
+              <a href="#">Javascript Projeleri</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+    
+
+<!-- highlight.js  -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+<script> hljs.highlightAll()</script>
+<script src="/js/script.js"></script>
+  </body>
+</html>
